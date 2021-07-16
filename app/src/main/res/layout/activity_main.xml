@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    tools:context=".ui.MainActivity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="160dp"
+        android:layout_height="3dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/purple_black"
+        app:layout_constraintBottom_toTopOf="@+id/textTips"
+        app:layout_constraintEnd_toEndOf="@+id/textTips"
+        app:layout_constraintStart_toStartOf="@+id/textTips" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_black"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageDev"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_android_black_24dp"
+            app:tint="@color/purple_black_variant" />
+
+        <ImageView
+            android:id="@+id/imageAll"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_all_inclusive_24"
+            app:tint="@color/purple_black_variant" />
+
+        <ImageView
+            android:id="@+id/imageDay"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_wb_sunny_24"
+            app:tint="@color/purple_black_variant" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="166dp"
+        android:text="USER NAME"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="8dp"
+        android:text="DICA"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="160dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/purple_black"
+        app:layout_constraintEnd_toEndOf="@+id/textTips"
+        app:layout_constraintStart_toStartOf="@+id/textTips"
+        app:layout_constraintTop_toBottomOf="@+id/textTips" />
+
+    <Button
+        android:id="@+id/buttonTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ripple_buttom"
+        android:padding="15dp"
+        android:text="@string/nova_dica"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textName"
+        app:layout_constraintVertical_bias="0.973" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
