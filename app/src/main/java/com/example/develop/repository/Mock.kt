@@ -13,10 +13,7 @@ class Mock {
 
     private val mListPhrases: List<Phrase> = listOf(
 
-            Phrase("Iniciar uma nova Activity\n" +
-                    "    startActivity(Intent(this, MainActivity::class.java))\n" +
-                    "    Finalizando uma Activity\n" +
-                    "    finish()", DEV),
+            Phrase("Finalizando uma Activity \n finish()", DEV),
             Phrase("Utilizando números aleatórios \n" +
                     "val random = Random().nextInt() <-- até o numero desejado", DEV),
             Phrase("Se estiver usando Kotlin, não é nescessário ; \n" +
@@ -24,7 +21,7 @@ class Mock {
             Phrase("Quando estiver com problemas, pare por uns minutos e descanse a mente", DAY),
             Phrase("Não é indicado ficar em frente a uma tela por mais de 20 minutos", DAY),
 
-    )
+            )
 
     fun getPhrase(categoryId: Int): String {
 
