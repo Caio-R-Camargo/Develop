@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Develop</string>
+    <string name="bem_vindo">Welcome</string>
+    <string name="salvar">Save</string>
+    <string name="nova_dica">New tip</string>
+    <string name="digite_nome">Enter your name</string>
+    <string name="preencha_nome">Fill in your name</string>
+</resources>
