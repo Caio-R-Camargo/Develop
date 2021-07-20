@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Develop</string>
-    <string name="bem_vindo">Bem-vindo!</string>
+    <string name="bem_vindo">Bem-vindo</string>
     <string name="salvar">Salvar</string>
     <string name="nova_dica">Nova dica</string>
+    <string name="digite_nome">Digite seu nome</string>
+    <string name="preencha_nome">Preencha seu nome</string>
 </resources>

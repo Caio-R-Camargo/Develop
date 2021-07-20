@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity(){
         mSecurityPreferences = SecurityPreferences(this)
 
         val name = mSecurityPreferences.getString(DevelopConstants.KEY.PERSON_NAME).toUpperCase()
-        textName.text = "Bem vindo, $name!"
+        val welcome = getString(R.string.bem_vindo)
+        textName.text = "$welcome, $name!"
 
         imageAll.setColorFilter(resources.getColor(R.color.purple))
         handleNewPhrase()

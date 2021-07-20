@@ -3,6 +3,7 @@ package com.example.develop.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.Settings
 import android.view.View
 import com.example.develop.BuildConfig
 import com.example.develop.R
@@ -58,7 +59,8 @@ class SplashActivity : AppCompatActivity() {
     }
 
     fun snackBarCustom(){
-        Snackbar.make(findViewById(android.R.id.content), "Preecha seu nome!",
+
+        Snackbar.make(findViewById(android.R.id.content), R.string.preencha_nome,
                 Snackbar.LENGTH_LONG).setAction("Action", null).setTextColor(
                 resources.getColor(R.color.purple)).setAction("Ok", View.OnClickListener {}).setActionTextColor(
                 resources.getColor(R.color.white)).show()

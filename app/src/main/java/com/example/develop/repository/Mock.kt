@@ -13,7 +13,7 @@ class Mock {
 
     private val mListPhrases: List<Phrase> = listOf(
 
-            Phrase("Finalizando uma Activity \n finish()", DEV),
+            Phrase( "Finalizando uma Activity \n finish()", DEV),
             Phrase("Utilizando números aleatórios \n" +
                     "val random = Random().nextInt() <-- até o numero desejado", DEV),
             Phrase("Se estiver usando Kotlin, não é nescessário ; \n" +
@@ -30,7 +30,6 @@ class Mock {
         val rand = Random().nextInt(filtered.size)
 
         return filtered[rand].description
-
 
     }
 
